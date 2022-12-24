@@ -31,7 +31,7 @@ class SetLunch:
         """
         return (self.amount_first_course * 70) + (self.amount_second_course * 140) + (self.amount_drink * 15)  #70, 140, 15 - ценники
 
-    def change_amount_f_c(self, amount: int):
+    def change_amount_first_course(self, amount: int):
         """
         Функция для изменения количества первого блюда
 
@@ -44,7 +44,7 @@ class SetLunch:
             raise ValueError("Количество первых блюд не должно быть отрицательным")
         self.amount_first_course = amount
 
-    def change_amount_s_c(self, amount: int):
+    def change_amount_second_course(self, amount: int):
         """
         Функция для изменения количества второго блюда
 
@@ -57,7 +57,7 @@ class SetLunch:
             raise ValueError("Количество вторых блюд не должно быть отрицательным")
         self.amount_second_course = amount
 
-    def change_amount_d(self, amount: int):
+    def change_amount_drink(self, amount: int):
         """
                 Функция для изменения количества напитков
 
@@ -74,7 +74,7 @@ class SetLunch:
 
 
 class Competition:
-    def __init__(self, amount_players: int, amount_winners):
+    def __init__(self, amount_players: int, amount_winners: int):
         """
         Создание и подготовка к работе объекта "Соревнование"
 
